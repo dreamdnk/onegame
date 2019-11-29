@@ -1,0 +1,70 @@
+
+.box{
+	padding: 0;
+	color: whitesmoke;
+	position:fixed;
+	margin: 0;
+	z-index: 0;
+	moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-o-user-select:none;
+	-khtml-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+.box.black{
+	background: rgba(105,105,105,1);
+	width: 200px;
+	height: 100px;
+}
+.box.button{
+	text-align: center;
+	background: rgba(105,105,105,1);
+}
+.box.button>div:nth-child(2){
+	width:100px;
+	height:40px;
+	color: #a5a5ff;
+	border: cornflowerblue 3px solid;
+	margin: 0 auto;
+	margin-top:5px;
+	line-height: 40px;
+	font-size: 30px;
+	font-weight: bolder;
+	background: #34353D;
+}
+.box.battle{
+	width: 500px;
+	height: 300px;
+	background: #41414f;
+}
+.box.battle>.toparm{
+	height: 60px;
+}
+.box.battle>.leftarm{
+	width: 204px;
+	height: 216px;
+	background: #31313f;
+	float: left;
+}
+.box.battle>.rightarm{
+	width: 204px;
+	height: 216px;
+	background: #31313F;
+	float: right;
+}
+.box.battle>.leftarm .unit{
+	width: 100px;
+	height: 70px;
+	border: black 1px solid;
+	float: left;
+	background: #131353;
+}
+.box.battle>.rightarm .unit{
+	width: 100px;
+	height: 70px;
+	border: black 1px solid;
+	float: left;
+	background: #531313;
+}
