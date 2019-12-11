@@ -10,7 +10,6 @@ $(function(){
 	dayTime(3);
 });
 $(document).ready(function(){
-	allarm();
 	//检测鼠标移动，拖拽窗口
 	$(document).mousemove(function(e){
 		$("#1 span").text(e.pageX+"-"+e.pageY);
@@ -30,7 +29,7 @@ $(".box").mousedown(function(e){
 	thing = this;
 	down = true;
 	var ts = $(this).css("top");
-	var ls = $(this).css("left")
+	var ls = $(this).css("left");
 	tops =e.pageY -ts.substr(0,ts.length-2);
 	lefts =e.pageX - ls.substr(0,ls.length-2);
 });

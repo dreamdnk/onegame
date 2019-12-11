@@ -1,36 +1,58 @@
-var hp;
-var mp;
-var soul;
-var speed;
-var defend;
-var money;
-var time;
-var rearm ={
-		littleBoy:{
+var hp,mp,sp,ap,dp,cards=[],items=[];
+var Marm ={
+		tongYu:{
+			name:"桐羽",
+			msg:"剑士",
+			img:"../../img/dftman.jpg",
 			hp:12,
-			mp:10,
+			mp:1,
 			soul:5,
-			spedd:2,
-			defend:2,
-			money:10,
-			time:2
+			act:4,
+			cards:[],
+			items:[]
 		},
-		littleArcher:{
-			hp:22,
-			mp:10,
-			soul:15,
-			spedd:2,
-			defend:2,
-			money:20,
-			time:2
+		weiXin:{
+			name:"唯心",
+			msg:"元素",
+			img:"",
+			hp:5,
+			mp:50,
+			soul:5,
+			act:1,
+			cards:[],
+			items:[]
 		}
 	}
+var Sarm={
+	tongRen:{
+		name:"铜人",
+		msg:"剑士",
+		img:"",
+		hp:5,
+		mp:1,
+		soul:5,
+		act:2,
+		cards:[],
+		items:[]
+	},
+	weiXin1:{
+		name:"唯心(初)",
+		msg:"元素",
+		img:"",
+		hp:10,
+		mp:50,
+		soul:5,
+		act:2,
+		cards:[],
+		items:[]
+	}
+}
 function getarm(name){
-	var x = rearm[name];
+	var x = Marm[name];
 	return x;
 }
 function allarm(){
-	for (var i in rearm){
+	for (var i in Marm){
 		console.log(i,"--",rearm[i])
 	}
 }

@@ -13,6 +13,9 @@
 	-ms-user-select:none;
 	user-select:none;
 }
+.hidden{
+	display: none;
+}
 .box.black{
 	background: rgba(105,105,105,1);
 	width: 200px;
@@ -35,36 +38,81 @@
 	background: #34353D;
 }
 .box.battle{
-	width: 500px;
-	height: 300px;
+	width: 1000px;
+	height: 700px;
 	background: #41414f;
 }
 .box.battle>.toparm{
 	height: 60px;
 }
 .box.battle>.leftarm{
-	width: 204px;
-	height: 216px;
+	width: 456px;
+	height: 202px;
 	background: #31313f;
 	float: left;
+	/* transform:rotate(10deg); */
 }
 .box.battle>.rightarm{
-	width: 204px;
-	height: 216px;
+	width: 456px;
+	height: 202px;
 	background: #31313F;
 	float: right;
 }
 .box.battle>.leftarm .unit{
-	width: 100px;
-	height: 70px;
+	position: relative;
+	width: 150px;
+	height: 200px;
 	border: black 1px solid;
 	float: left;
 	background: #131353;
 }
 .box.battle>.rightarm .unit{
-	width: 100px;
-	height: 70px;
+	position: relative;
+	width: 150px;
+	height: 200px;
 	border: black 1px solid;
 	float: left;
 	background: #531313;
+}
+.unit>.defend{
+	position:absolute;
+	top:140px;
+	left:120px;
+	width:30px;
+	height:30px;
+	background: #6495ED;
+	border-radius: 13px;
+}
+.unit>.health{
+	position:absolute;
+	top:170px;
+	left:120px;
+	width:30px;
+	height:30px;
+	background: #F4454D;
+	border-radius: 13px;
+}
+.rightarm .unit>.action{
+	width: 150px;
+	height: 20px;
+	background: rgba(100,100,100,0.5);
+	text-align: center;
+	line-height: 20px;
+}
+.card{
+	width:150px;
+	height:200px;
+	position: absolute;
+}
+.card.a{
+	background:url(../img/行动牌面.png);
+	background-size: 100%;
+}
+.card.s{
+	background: url(../img/灵魂牌面.png);
+	background-size: 100%;
+}
+.card.m{
+	background: url(../img/魔法牌面.png);
+	background-size: 100%;
 }
