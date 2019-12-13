@@ -105,14 +105,14 @@
 	position: absolute;
 }
 .card.a{
-	background:url(../img/行动牌面.png);
+	background: rgb(250,120,120);
 	background-size: 100%;
 }
 .card.s{
-	background: url(../img/灵魂牌面.png);
+	background: rgb(150,100,150);
 	background-size: 100%;
 }
 .card.m{
-	background: url(../img/魔法牌面.png);
+	background: rgb(200,200,250);
 	background-size: 100%;
 }
