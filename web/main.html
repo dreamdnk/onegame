@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/base.css">
+		</style>
+	</head>
+	<body>
+		<div class="box battle" id="keyGround" style="top:0">
+			<div class="toparm">
+				<div id="give">点击初始化</div>
+				<!-- 遗物，金币等 -->
+			</div>
+			<div class="leftarm">
+				<div class="sbox">
+					<!-- 两个支援角色槽位 -->
+					<div class="unit s" id="role2">
+						<div class="disImg"></div>
+						<div class="defend"></div>
+						<div class="health"></div>
+						<div class="hidden unidId">2</div>
+					</div>
+					<div class="unit s" id="role3">
+						<div class="disImg"></div>
+						<div class="defend"></div>
+						<div class="health"></div>
+						<div class="hidden unidId">3</div>
+					</div>
+				</div>
+				<div class="unit m" id="role1">
+					<!-- 主要角色槽位 -->
+					<div class="disImg"></div>
+					<div class="defend"></div>
+					<div class="health"></div>
+					<div class="hidden unidId">1</div>
+				</div>
+			</div>
+			<div class="midTimer">0</div>
+			<div class="rightarm">
+				<!-- 敌人槽位 -->
+				<div class="unit hidden" id="role4">
+					<div class="disImg"></div>
+					<div class="action"></div>
+					<div class="defend"></div>
+					<div class="health"></div>
+					<div class="hidden unidId">4</div>
+				</div>
+				<div class="unit hidden" id="role5">
+					<div class="disImg"></div>
+					<div class="action"></div>
+					<div class="defend"></div>
+					<div class="health"></div>
+					<div class="hidden unidId">5</div>
+				</div>
+				<div class="unit hidden" id="role6">
+					<div class="disImg"></div>
+					<div class="action"></div>
+					<div class="defend"></div>
+					<div class="health"></div>
+					<div class="hidden unidId">6</div>
+				</div>
+			</div>
+			<div class="bottomarm">
+				<div id="cost">
+					<div id="mp" class="costp">0</div>
+					<div id="sp" class="costp">0</div>
+				</div>
+				<div id="handCard">
+					<!-- 手牌所在位置 -->
+				</div>
+				<div id="cardDeck" class="cardD" onclick="cardShower(1)">0</div>
+				<div id="cardYard" class="cardD" onclick="cardShower(2)">0</div>
+				<div id="cardBan" class="cardD" onclick="cardShower(3)">0</div>
+				<div id="cardButton" onclick="reDraw()">end</div>
+			</div>
+			<div id="cardShower" class="hidden">
+			<div id="cardShowerTrue">
+				<div id="cardShowerCancel" onclick="cardShowerClose()">←</div>
+				<div style="height:40px;"></div>
+				<!-- 显示某一卡牌列表 -->
+			</div>
+			</div>
+		</div>
+		<div id="arrow" class="hidden" style="">
+			<!-- 拖拽箭头 -->
+		</div>
+	</body>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/config.js"></script>
+	<script src="../js/units/role.js"></script>
+	<script src="../js/units/card.js"></script>
+	<script src="../js/units/item.js"></script>
+	<script src="../js/display.js"></script>
+	<script src="../js/cardMain.js"></script>
+	<script>
+	</script>
+</html>

@@ -25,13 +25,17 @@
 			<div>点↓时间快进20秒</div>
 			<div id="flash" >跳过</div>
 		</div>
-		<div class="box black button" style="left: 100px;top:100px">
+		
+		<div class="box black button" style="left:0;top:100px">
 			<div>测试</div>
-			<div id="start">开始</div>
+			<div id="start">切换</div>
 		</div>
-		<div class="box select"></div>
-		<div class="box battle hidden" style="top:200px;">
-			<div class="toparm"></div>
+		
+		<div class="box battle" id="keyGround" style="top:0;">
+			<div class="toparm">
+				<div id="start2">点此隐藏</div>
+				<div id="give">点击</div>
+			</div>
 			<div class="leftarm">
 				<div class="unit">
 					<div class="defend"></div>
@@ -63,31 +67,15 @@
 					<div class="health"></div>
 				</div>
 			</div>
+			<div id="handCard">
+			</div>
 		</div>
-
-		<div class="box card a">
-			<div class="cost"></div>
-			<div class="title"></div>
-			<div class="pic"></div>
-			<div class="msg"></div>
-		</div>
-		<div class="box card s">
-			<div class="cost"></div>
-			<div class="title"></div>
-			<div class="pic"></div>
-			<div class="msg"></div>
-		</div>
-		<div class="box card m">
-			<div class="cost"></div>
-			<div class="title"></div>
-			<div class="pic"></div>
-			<div class="msg"></div>
-		</div>
+		
 	</body>
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/units/arms.js"></script>
-	<script src="../js/battle.js"></script>
-	<script src="../js/config.js"></script>
+	<script src="../js/units/cards.js"></script>
+	<script src="../js/display.js"></script>
 	<script>
 	</script>
 </html>

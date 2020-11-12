@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div style="white-space:pre;text-align:center;font-size:10px;width: 500px;background-color:#C5C5C5" id="1">2</div>
+		<embed class="see"  width="100%" height="100%" src="1.amr" />
+		<embed class="see"  width="100%" height="100%" src="earthLink.mp4" />
+	</body>
+		<script src="js/jquery.min.js"></script>
+	<script>
+		let naData = "【配网我来保】截止03-18 11:00:00，实时停电，湖南省供电公司：线路601起，台区852起。张家界：线路1起，台区20起。衡阳市供电公司：线路64起，台区51起。湘西市：线路21起，台区35起。湘潭市：线路52起，台区75起。永州市：线路54起，台区97起。郴州市：线路9起，台区19起。怀化市：线路36起，台区95起。娄底市：线路40起，台区32起。岳阳市：线路77起，台区68起。邵阳市：线路20起，台区88起。益阳市：线路52起，台区64起。株洲市：线路31起，台区59起。常德市：线路74起，台区72起。长沙市：线路70起，台区77起。";
+		if(naData.indexOf("【配网我来保】截止")>=0 && naData.indexOf("实时停电，")>=0){
+			 console.log(naData)
+			
+			// let count = 0
+			// let the = naData.indexOf("。",count)
+			// let max = naData.length
+			// let head = naData.slice(0,naData.indexOf("实时停电，")+4)+" \n "
+			// naData = naData.slice(naData.indexOf("实时停电，")+5)
+			// let arrData = [];
+			// arrData=naData.split("。");
+			// let est = 0;
+			// let lastest = 0;
+			// for(let i=0;i<arrData.length-1;i++){
+			// 	est=arrData[i].slice(0,arrData[i].indexOf("：")).length>est?arrData[i].slice(0,arrData[i].indexOf("：")).length:est
+			// 	lastest=arrData[i].slice(arrData[i].indexOf("：")).length>lastest?arrData[i].slice(arrData[i].indexOf("：")).length:lastest
+			// 	console.log(est,arrData[i].slice(arrData[i].indexOf("：")),lastest,arrData[i].slice(arrData[i].indexOf("：")).length)
+			// }
+			// naData = head
+			// let chspace = "　　　　　　　　　　　";
+			// let enspace ="                  ";
+			// for(let i=0;i<arrData.length-1;i++){
+			// 	// for(let x=0;x<est-arrData[i].slice(0,arrData[i].indexOf("：")).length;x++){
+			// 	// 	arrData[i]= "　" + arrData[i]
+			// 	// }
+			// 	// naData=naData+arrData[i]+" \n "
+			// 	naData = naData+ chspace.slice(0,(est-arrData[i].slice(0,arrData[i].indexOf("：")).length))+arrData[i]+
+			// 				enspace.slice(0,((lastest-arrData[i].slice(arrData[i].indexOf("：")).length))*2)+" \n "
+				
+			// }
+			let head = naData.slice(0,naData.indexOf("实时停电，")+4)+" \n "
+			naData = naData.slice(naData.indexOf("实时停电，")+5)
+			let arrData = [];
+			arrData=naData.split("。");
+			naData = head
+			for(let i=0;i<arrData.length-1;i++){
+				if(i!=arrData.length-2)
+				naData = naData+arrData[i]+" \n "
+				else
+				naData = naData+arrData[i]
+				console.log(i,arrData.length-1)
+				
+			}
+			console.log(naData)
+			// while(the>=0){
+			// 	naData = naData.slice(0,naData.indexOf("。",count)+1)+"\n"+naData.slice(naData.indexOf("。",count)+1)
+			// 	count= naData.indexOf("。",naData.indexOf("。",count)+1);
+			// 	the = count
+			// 	console.log(count)
+			// 	if(the >=max)
+			// 	break
+			// }
+			
+		}
+		$("#1").text(naData)
+	</script>
+</html>

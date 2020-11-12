@@ -1,4 +1,5 @@
 var hp,mp,sp,ap,dp,cards=[],items=[];
+//主要角色
 var Marm ={
 		tongYu:{
 			name:"桐羽",
@@ -23,6 +24,7 @@ var Marm ={
 			items:[]
 		}
 	}
+//支援角色
 var Sarm={
 	tongRen:{
 		name:"铜人",

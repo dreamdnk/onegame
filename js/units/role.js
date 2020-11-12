@@ -1,0 +1,85 @@
+//
+//主要角色
+var mainRole ={
+	tm01:{
+		id:"tm01",
+		name:"主测试",
+		msg:"测试信息",
+		img:"",
+		hp:42,
+		mp:1,
+		sp:5,
+		items:[],
+		deck:[{id:"tm01c1",count:4},{id:"tm01c2",count:4},{id:"tm01c3",count:2}]//初始卡组
+	}
+}
+//支援角色
+var supRole={
+	ts01:{
+		id:"ts01",
+		name:"测试1",
+		msg:"",
+		img:"",
+		hp:5,
+		mp:1,
+		sp:5,
+		time:4,//重生所需时刻
+		timeAdd:1,//每次重生时刻增加
+		items:[],
+		deck:[{id:"ts01c1",count:2}]
+	},
+	ts02:{
+		id:"ts02",
+		name:"测试2",
+		msg:"",
+		img:"",
+		hp:5,
+		mp:1,
+		sp:5,
+		time:1,//重生所需时刻
+		timeAdd:1,//每次重生时刻增加
+		items:[],
+		deck:[{id:"ts02c1",count:2}]
+	}
+}
+//敌对单位的act列表
+var badAct={
+	//单体攻击 伤害 来源 目标 重复次数 前摇时间
+	singleAttack:function(num,who,aim,count,time){
+		
+	}
+}
+//敌对单位
+var badRole={
+	titan01:{
+		id:"titan01",
+		name:"测试1",
+		msg:"",
+		img:"",
+		hp:100,
+		actlist:[],//顺序行动模式
+		actDefault:[],//开场Buff和被动行动
+		actMid:[]//半血时的行动
+	},
+	titan02:{
+		id:"titan02",
+		name:"测试2",
+		msg:"",
+		img:"",
+		hp:300,
+		actlist:[],//顺序行动模式
+		actDefault:[],//开场Buff和被动行动
+		actMid:[]//半血时的行动
+	},
+	titan03:{
+		id:"titan03",
+		name:"测试3",
+		msg:"",
+		img:"",
+		hp:100,
+		actlist:[],//顺序行动模式
+		actDefault:[],//开场Buff和被动行动
+		actMid:[]//半血时的行动
+	}
+}
+
